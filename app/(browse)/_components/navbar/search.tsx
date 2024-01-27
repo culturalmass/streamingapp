@@ -8,7 +8,7 @@ import { SearchIcon, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-const Search = () => {
+export const Search = () => {
   const router = useRouter();
   const [value, setValue] = useState("");
 
@@ -59,5 +59,3 @@ const Search = () => {
     </form>
   );
 };
-
-export default Search;

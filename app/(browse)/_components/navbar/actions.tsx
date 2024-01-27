@@ -4,7 +4,7 @@ import { Clapperboard } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-const Actions = async () => {
+export const Actions = async () => {
   const user = await currentUser();
   return (
     <div className="flex items-center justify-end gap-x-2 ml-4 lg:ml-0">
@@ -34,5 +34,3 @@ const Actions = async () => {
     </div>
   );
 };
-
-export default Actions;
