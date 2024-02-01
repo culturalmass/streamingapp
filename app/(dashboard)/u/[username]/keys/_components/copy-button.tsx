@@ -26,7 +26,7 @@ export const CopyButton = ({ value }: CopyButtonProps) => {
   return (
     <Button
       onClick={onCopy}
-      disabled={!value || !isCopied}
+      disabled={!value || isCopied}
       variant="ghost"
       size="sm"
     >

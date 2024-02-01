@@ -2,7 +2,7 @@ import { Input } from "@/components/ui/input";
 import { CopyButton } from "./copy-button";
 
 interface UrlCardProps {
-  value: string | null;
+  value: string;
 }
 
 export const UrlCard = ({ value }: UrlCardProps) => {
