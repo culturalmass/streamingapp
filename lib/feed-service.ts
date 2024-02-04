@@ -38,7 +38,7 @@ export const getStreams = async () => {
           isLive: "desc",
         },
         {
-          updateAt: "desc",
+          updatedAt: "desc",
         },
       ],
     });
@@ -56,7 +56,7 @@ export const getStreams = async () => {
           isLive: "desc",
         },
         {
-          updateAt: "desc",
+          updatedAt: "desc",
         },
       ],
     });

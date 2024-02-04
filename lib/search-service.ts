@@ -39,15 +39,20 @@ export const getSearch = async (term?: string) => {
           },
         ],
       },
-      include: {
+      select: {
         user: true,
+        id: true,
+        name: true,
+        isLive: true,
+        thumbnailUrl: true,
+        updatedAt: true,
       },
       orderBy: [
         {
           isLive: "desc",
         },
         {
-          updateAt: "desc",
+          updatedAt: "desc",
         },
       ],
     });
@@ -69,15 +74,20 @@ export const getSearch = async (term?: string) => {
           },
         ],
       },
-      include: {
+      select: {
         user: true,
+        id: true,
+        name: true,
+        isLive: true,
+        thumbnailUrl: true,
+        updatedAt: true,
       },
       orderBy: [
         {
           isLive: "desc",
         },
         {
-          updateAt: "desc",
+          updatedAt: "desc",
         },
       ],
     });
